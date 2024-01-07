@@ -1,0 +1,36 @@
+{
+  "name": "namastereact",
+  "version": "1.0.0",
+  "description": "this is a namaste react for nisheetk",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://git@github.com/nisheetkaran/React.git"
+  },
+  "keywords": [
+    "nisheet",
+    "react"
+  ],
+  "author": "NisheetK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nisheetkaran/React/issues"
+  },
+  "homepage": "https://github.com/nisheetkaran/React#readme",
+  "devDependencies": {
+    "parcel": "^2.11.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+
+  "browserlist": {
+    "development": [
+      "last 2 version"
+    ]
+  }
+}
