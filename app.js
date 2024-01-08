@@ -10,12 +10,15 @@ import ReactDOM from "react-dom/client";
 // console.log(heading); //object
 
 
-const parent = React.createElement("div", { id: "parent" }, 
-React.createElement("div", { id: "child" },[
-[React.createElement("h1", {}, "I am h1 tag"), React.createElement("p", {}, "I am p tag")], 
-[React.createElement("h1", {}, "I am h1 tag"), React.createElement("p", {}, "I am p tag")]]));
+const parent = React.createElement("div", { id: "parent" },
+    React.createElement("div", { id: "child" }, [
+        [React.createElement("h1", {}, "I am h1 tag"), React.createElement("p", {}, "I am p tag")],
+        [React.createElement("h1", {}, "I am h1 tag"), React.createElement("p", {}, "I am p tag")]]));
 
 console.log(parent); //object
+
+const jsxHeading = <h1 id="head" className="damn" tabIndex={"1"}>Hello from JSX</h1>;
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(parent);
+root.render(jsxHeading); 
