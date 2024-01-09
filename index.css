@@ -1,24 +1,114 @@
-.header{
+/* Enhanced Header Styling */
+.header {
     display: flex;
     justify-content: space-between;
-    border: solid 1px #000;
     align-items: center;
-}
-.logo{
-    width: 200px;
+    border-bottom: solid 1px #000;
+    padding: 10px;
+    background-color: #f8f8f8;
 }
 
-.nav-items {
-    padding: 0px 20px;
+.logo {
+    width: 150px; /* Adjusted size */
 }
 
 .nav-items > ul {
     display: flex;
-    font-size: 24px;
+    font-size: 18px; /* Adjusted font size for better readability */
+    margin: 0;
+    padding: 0;
 }
 
 .nav-items > ul > li {
     list-style: none;
-    margin: 10px;
+    margin: 0 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav-items > ul > li:hover {
+    background-color: #e0e0e0; /* Hover effect */
+}
+
+/* Responsive Design for Navigation */
+@media (max-width: 600px) {
+    .nav-items > ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-items > ul > li {
+        margin-bottom: 5px;
+    }
+}
+
+/* Improved Card Design */
+.res-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust as needed */
+    align-items: flex-start; /* Aligns items at the top */
+    gap: 10px; /* Space between cards */
     padding: 10px;
+    margin: 0 auto; /* Centering the container */
+    max-width: 1200px; /* Adjust this based on your design */
+}
+
+.cards {
+    width: 200px;
+    height: 300px;
+    border: #000 solid 0.1px;
+    padding: 5px;
+    margin-bottom: 10px;
+    overflow: hidden; /* Hides overflowing content */
+    /* Alternatively, use */
+    overflow: auto;
+}
+
+.card-img > img {
+    width: 100%;
+    height: auto; /* Adjust image height */
+}
+
+.card-body {
+    padding: 5px; /* Adjust padding */
+}
+
+.card-title h3 {
+    font-size: 1em; /* Adjust title size */
+    margin: 5px 0;
+}
+
+.card-text p {
+    font-size: 0.9em; /* Adjust text size */
+    margin: 2px 0;
+    color: #555;
+}
+
+.cards:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.3);
+}
+
+.card-img > img {
+    width: 100%;
+    height: auto; /* Changed to auto for maintaining aspect ratio */
+}
+
+.card-title h3 {
+    margin: 5px 0;
+}
+
+.card-text p {
+    margin: 2px 0;
+    color: #555;
+}
+
+/* Footer Addition */
+.footer {
+    text-align: center;
+    padding: 15px;
+    border-top: solid 1px #000;
+    background-color: #f8f8f8;
 }
