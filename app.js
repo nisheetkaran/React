@@ -1,24 +1,34 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-// const heading = React.createElement("h1",
-//     {
-//         id: "head",
-//         xyz: "abc"
-//     }, "Hello from react");
 
-// console.log(heading); //object
+const Header = () => {
+    return (
+        <div className="header">
+            <div className="logocontainer">
+                <img className="logo" src="https://www.logodesign.net/logo/smoking-burger-with-lettuce-3624ld.png?size=large" alt="" />
+            </div>
+            <div className="nav-items">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Card</li>
+                </ul>  
+            </div>         
+        </div>
+    )
+}
 
+const Applayout = () => {
+    return <div className="app">
+        // Header
+        <Header></Header>
+        //body
+        //footer
+    </div>
+}
 
-const parent = React.createElement("div", { id: "parent" },
-    React.createElement("div", { id: "child" }, [
-        [React.createElement("h1", {}, "I am h1 tag"), React.createElement("p", {}, "I am p tag")],
-        [React.createElement("h1", {}, "I am h1 tag"), React.createElement("p", {}, "I am p tag")]]));
-
-console.log(parent); //object
-
-const jsxHeading = <h1 id="head" className="damn" tabIndex={"1"}>Hello from JSX</h1>;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(jsxHeading); 
+root.render(<Applayout/>); 
