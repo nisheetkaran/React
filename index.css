@@ -24,28 +24,34 @@
 }
 
 .search {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: solid 1px #000;
     padding: 10px;
-    margin: 10px;
 }
 
-.res-cards {
+.res-logo{
+    width: 100%;
+}
+
+.res-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.res-card{
     width: 200px;
     height: 300px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     border: #000 solid 0.1px;
+    overflow: hidden;
     padding: 5px;
 }
 
-.cards:hover {
+.res-card:hover {
     cursor: pointer;
     border: #000 solid 1px;
-    box-shadow: 0px 0px 10px 0px #0f0f0f;
 }
 .card-img > img{
     width: 100%;
