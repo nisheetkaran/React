@@ -7,7 +7,7 @@ import Body from "./components/Body";
 const Footer = () => {
     return (
         <div className="footer">
-            <p>© 2024 Restaurant Finder. All rights reserved.</p>
+            <p>©Nisheet Karan. Made with love and efforts. </p>
         </div>
     );
 }
