@@ -109,3 +109,8 @@
 .Search input:hover {
     border-color: #007bff; /* Border color on hover */
 }
+
+.login
+{
+    padding: 0px 20px;
+}
